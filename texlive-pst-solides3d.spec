@@ -185,6 +185,7 @@ including external database files.
 %doc %{_texmfdistdir}/doc/generic/pst-solides3d/doc-en/tore1860part-io.dat
 %doc %{_texmfdistdir}/doc/generic/pst-solides3d/doc-en/tore1860part-sommets.dat
 %doc %{_texmfdistdir}/doc/generic/pst-solides3d/pst-solides3d-doc.pdf
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -195,3 +196,5 @@ including external database files.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar dvips tex doc %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
