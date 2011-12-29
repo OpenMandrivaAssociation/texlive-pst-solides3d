@@ -17,8 +17,6 @@ BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
 Requires(post):	texlive-kpathsea
-Conflicts:	texlive-texmf <= 20110705-3
-Conflicts:	texlive-doc <= 20110705-3
 
 %description
 The package is designed to draw solids in 3d perspective.
@@ -31,20 +29,12 @@ algebraic functions drawn in 2 or 3 dimensions; - project text
 onto a plane and onto the faces of a solid; - support for
 including external database files.
 
-%pre
-    %_texmf_mktexlsr_pre
-
 %post
-    %_texmf_mktexlsr_post
-
-%preun
-    if [ $1 -eq 0 ]; then
-	%_texmf_mktexlsr_pre
-    fi
+    %{_sbindir}/texlive.post
 
 %postun
     if [ $1 -eq 0 ]; then
-	%_texmf_mktexlsr_post
+	%{_sbindir}/texlive.post
     fi
 
 #-----------------------------------------------------------------------
@@ -186,7 +176,6 @@ including external database files.
 %doc %{_texmfdistdir}/doc/generic/pst-solides3d/doc-en/tore1860part-io.dat
 %doc %{_texmfdistdir}/doc/generic/pst-solides3d/doc-en/tore1860part-sommets.dat
 %doc %{_texmfdistdir}/doc/generic/pst-solides3d/pst-solides3d-doc.pdf
-%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -197,5 +186,3 @@ including external database files.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar dvips tex doc %{buildroot}%{_texmfdistdir}
-mkdir -p %{buildroot}%{_tlpkgobjdir}
-cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
