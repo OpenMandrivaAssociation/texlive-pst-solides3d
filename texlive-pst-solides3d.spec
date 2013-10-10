@@ -1,12 +1,12 @@
-# revision 19959
+# revision 28581
 # category Package
 # catalog-ctan /graphics/pstricks/contrib/pst-solides3d
-# catalog-date 2010-09-29 09:03:07 +0200
+# catalog-date 2012-11-16 20:45:05 +0100
 # catalog-license lppl1.3
-# catalog-version 4.23
+# catalog-version 4.24
 Name:		texlive-pst-solides3d
-Version:	4.23
-Release:	2
+Version:	4.24
+Release:	1
 Summary:	Draw perspective views of 3D solids
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/graphics/pstricks/contrib/pst-solides3d
@@ -45,6 +45,7 @@ including external database files.
 %doc %{_texmfdistdir}/doc/generic/pst-solides3d/Changes
 %doc %{_texmfdistdir}/doc/generic/pst-solides3d/README
 %doc %{_texmfdistdir}/doc/generic/pst-solides3d/doc-en/Changes
+%doc %{_texmfdistdir}/doc/generic/pst-solides3d/doc-en/Letter.ist
 %doc %{_texmfdistdir}/doc/generic/pst-solides3d/doc-en/Makefile
 %doc %{_texmfdistdir}/doc/generic/pst-solides3d/doc-en/Pyramid-couleurs.dat
 %doc %{_texmfdistdir}/doc/generic/pst-solides3d/doc-en/Pyramid-faces.dat
@@ -146,6 +147,7 @@ including external database files.
 %doc %{_texmfdistdir}/doc/generic/pst-solides3d/doc-en/paraboloid-io.dat
 %doc %{_texmfdistdir}/doc/generic/pst-solides3d/doc-en/paraboloid-sommets.dat
 %doc %{_texmfdistdir}/doc/generic/pst-solides3d/doc-en/pst-solides3d-doc.bib
+%doc %{_texmfdistdir}/doc/generic/pst-solides3d/doc-en/pst-solides3d-doc.brf
 %doc %{_texmfdistdir}/doc/generic/pst-solides3d/doc-en/pst-solides3d-doc.tex
 %doc %{_texmfdistdir}/doc/generic/pst-solides3d/doc-en/rocket.obj
 %doc %{_texmfdistdir}/doc/generic/pst-solides3d/doc-en/slicePyramid-couleurs.dat
@@ -154,7 +156,6 @@ including external database files.
 %doc %{_texmfdistdir}/doc/generic/pst-solides3d/doc-en/slicePyramid-sommets.dat
 %doc %{_texmfdistdir}/doc/generic/pst-solides3d/doc-en/sommets_nefer.dat
 %doc %{_texmfdistdir}/doc/generic/pst-solides3d/doc-en/sommets_nefer0.dat
-%doc %{_texmfdistdir}/doc/generic/pst-solides3d/doc-en/tex-files-all.zip
 %doc %{_texmfdistdir}/doc/generic/pst-solides3d/doc-en/tore1836-couleurs.dat
 %doc %{_texmfdistdir}/doc/generic/pst-solides3d/doc-en/tore1836-faces.dat
 %doc %{_texmfdistdir}/doc/generic/pst-solides3d/doc-en/tore1836-io.dat
@@ -186,17 +187,3 @@ including external database files.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar dvips tex doc %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 4.23-2
-+ Revision: 755478
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 4.23-1
-+ Revision: 719396
-- texlive-pst-solides3d
-- texlive-pst-solides3d
-- texlive-pst-solides3d
-- texlive-pst-solides3d
-
