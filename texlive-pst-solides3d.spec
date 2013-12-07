@@ -6,7 +6,7 @@
 # catalog-version 4.24
 Name:		texlive-pst-solides3d
 Version:	4.24
-Release:	4
+Release:	5
 Summary:	Draw perspective views of 3D solids
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/graphics/pstricks/contrib/pst-solides3d
