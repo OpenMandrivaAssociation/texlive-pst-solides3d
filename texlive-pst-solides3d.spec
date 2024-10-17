@@ -3,7 +3,7 @@ Version:	68786
 Release:	1
 Summary:	Draw perspective views of 3D solids
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/graphics/pstricks/contrib/pst-solides3d
+URL:		https://www.ctan.org/tex-archive/graphics/pstricks/contrib/pst-solides3d
 License:	LPPL1.3
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/pst-solides3d.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/pst-solides3d.doc.r%{version}.tar.xz
